@@ -1,20 +1,15 @@
 package fop.w5cars;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class LicensePlate {
 
     private String regionalCode, letters;
     private int digits;
-    private static List<LicensePlate> licence = new ArrayList<>();
 
 
     public LicensePlate(String regionalCode, String letters, int digits) {
         this.regionalCode = regionalCode;
         this.letters = letters;
         this.digits = digits;
-        licence.add(this);
     }
 
     public String getRegionalCode() {
@@ -43,5 +38,9 @@ public class LicensePlate {
 
     boolean isEqual(LicensePlate other) {
         return this.digits == other.getDigits() && this.regionalCode == other.getRegionalCode() && this.letters == other.getLetters();
+    }
+
+    public String toString(){
+        return this.getRegionalCode() + ":" + this.getLetters() + " " + this.getDigits();
     }
 }

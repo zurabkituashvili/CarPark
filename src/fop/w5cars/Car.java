@@ -11,10 +11,19 @@ public class Car {
         this.licensePlate = licensePlate;
         this.chassisNumber = count++;
     }
+    public String getBrand(){
+        return this.brand;
+    }
     public int getChassisNumber(){
         return this.chassisNumber;
     }
     public void setChassisNumber(int newNumber){
         this.chassisNumber = newNumber;
+    }
+    public LicensePlate getLicensePlate(){
+        return this.licensePlate;
+    }
+    public String toString(){
+        return "Car " + this.getChassisNumber() + ": (Brand: " + this.getBrand() + ". License Plate: " + this.getLicensePlate() + ")";
     }
 }
