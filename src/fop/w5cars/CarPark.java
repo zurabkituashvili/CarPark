@@ -14,7 +14,6 @@ public class CarPark {
                 spaces[i] = c;
                 return i;
             }
-            if (spaces[spaces.length - 1] != null) return -1;
         }
         return -1;
     }
