@@ -18,4 +18,10 @@ public class CarPark {
         }
         return -1;
     }
+
+//    int search(LicensePlate lp){
+//        for (int i = 0; i < spaces.length; i++){
+//            if (spaces[i])
+//        }
+//    }
 }
