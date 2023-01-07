@@ -40,7 +40,7 @@ public class LicensePlate {
 
     boolean isEqual(LicensePlate other){
         for (LicensePlate licensePlate : licence){
-            if (licensePlate == other) return true;
+            if (licensePlate.getRegionalCode().equals(other.getRegionalCode()) && licensePlate.getLetters().equals(other.getLetters()) && licensePlate.getDigits() == other.getDigits()) return true;
         }
         return false;
     }
