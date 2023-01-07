@@ -4,7 +4,7 @@ public class Car {
     private String brand;
     private LicensePlate licensePlate;
     private int count = 0;
-    private static int chassisNumber;
+    private int chassisNumber;
 
     public Car(String brand, LicensePlate licensePlate) {
         this.brand = brand;
