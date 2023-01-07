@@ -8,13 +8,20 @@ public class CarPark {
         spaces = new Car[n];
     }
 
+    public Car[] getSpaces(){
+        return this.spaces;
+    }
+
+    public void setSpaces(Car[] spaces){
+        this.spaces = spaces;
+    }
+
     int park(Car c){
         for (int i = 0; i < spaces.length; i++){
             if (spaces[i] == null){
                 spaces[i] = c;
                 return i;
             }
-            if (spaces[spaces.length - 1] != null) return -1;
         }
         return -1;
     }
