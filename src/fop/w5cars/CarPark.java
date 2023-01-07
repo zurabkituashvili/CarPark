@@ -1,5 +1,11 @@
 package fop.w5cars;
 
 public class CarPark {
-	// TODO
+
+    private Car[] spaces;
+
+    public CarPark(int n) {
+        spaces = new Car[n];
+    }
+
 }
