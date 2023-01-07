@@ -8,7 +8,7 @@ public class CarPark {
         spaces = new Car[n];
     }
 
-    public int park(Car c){
+    int park(Car c){
         for (int i = 0; i < spaces.length; i++){
             if (spaces[i] == null){
                 spaces[i] = c;
