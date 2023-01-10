@@ -16,7 +16,7 @@ public class CarPark {
         this.spaces = spaces;
     }
 
-    int park(Car c){
+     public int park(Car c){
         for (int i = 0; i < spaces.length; i++){
             if (spaces[i] == null){
                 spaces[i] = c;
@@ -26,7 +26,7 @@ public class CarPark {
         return -1;
     }
 
-    int search(LicensePlate lp){
+    public int search(LicensePlate lp){
         for (int i = 0; i < spaces.length; i++){
             if (spaces[i] != null && spaces[i].getLicensePlate() == lp){
                 return i;
@@ -35,7 +35,7 @@ public class CarPark {
         return -1;
     }
 
-    Object driveOff(LicensePlate lp){
+    public Car driveOff(LicensePlate lp){
         for (int i = 0; i < spaces.length; i++){
             if (spaces[i] != null && spaces[i].getLicensePlate() == lp){
                 Car car = spaces[i];
