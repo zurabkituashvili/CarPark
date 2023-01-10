@@ -17,6 +17,11 @@ public class Car {
     public int getChassisNumber(){
         return this.chassisNumber;
     }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
     public void setChassisNumber(int newNumber){
         this.chassisNumber = newNumber;
     }

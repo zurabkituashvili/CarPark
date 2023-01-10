@@ -1,5 +1,7 @@
 package fop.w5cars;
 
+import java.util.Objects;
+
 public class LicensePlate {
 
     private String regionalCode, letters;
@@ -37,7 +39,7 @@ public class LicensePlate {
     }
 
     boolean isEqual(LicensePlate other) {
-        return this.digits == other.getDigits() && this.regionalCode == other.getRegionalCode() && this.letters == other.getLetters();
+        return Objects.equals(this.digits, other.getDigits()) && Objects.equals(this.regionalCode, other.getRegionalCode()) && Objects.equals(this.letters, other.getLetters());
     }
 
     public String toString(){
