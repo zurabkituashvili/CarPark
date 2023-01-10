@@ -6,6 +6,7 @@ public class Car {
     private int chassisNumber;
     private static int count = 1;
 
+
     public Car(String brand, LicensePlate licensePlate) {
         this.brand = brand;
         this.licensePlate = licensePlate;
