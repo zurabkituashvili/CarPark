@@ -23,6 +23,10 @@ public class Car {
         this.brand = brand;
     }
 
+    public void setLicensePlate(LicensePlate licensePlate) {
+        this.licensePlate = licensePlate;
+    }
+
     public void setChassisNumber(int newNumber){
         this.chassisNumber = newNumber;
     }

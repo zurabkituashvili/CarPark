@@ -39,7 +39,7 @@ public class LicensePlate {
     }
 
 
-    boolean isEqual(LicensePlate other) {
+    public boolean isEqual(LicensePlate other) {
         return Objects.equals(this.digits, other.getDigits()) && Objects.equals(this.regionalCode, other.getRegionalCode()) && Objects.equals(this.letters, other.getLetters());
     }
 
