@@ -1,6 +1,5 @@
 package fop.w5cars;
 
-
 public class Car {
     private String brand;
     private LicensePlate licensePlate;
