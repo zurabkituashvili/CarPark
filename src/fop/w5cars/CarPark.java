@@ -51,9 +51,9 @@ public class CarPark {
         String result = "Car Park:\n";
         for (int i = 0; i < spaces.length; i++){
             if (spaces[i] != null){
-                result += " " + i + ": [" + spaces[i].toString() + "]\n";
+                result += i + ": [" + spaces[i].toString() + "]\n";
             }
-            else result += " " + i + ": []\n";
+            else result += i + ": []\n";
         }
         return result;
     }

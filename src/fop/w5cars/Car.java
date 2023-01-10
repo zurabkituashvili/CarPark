@@ -34,6 +34,6 @@ public class Car {
         return this.licensePlate;
     }
     public String toString(){
-        return "Car " + this.getChassisNumber() + ": (Brand: " + this.getBrand() + ". License Plate: " + this.getLicensePlate() + ")";
+        return "Car " + this.getChassisNumber() + ": (Brand: " + this.getBrand() + ", License Plate: " + this.getLicensePlate() + ")";
     }
 }
