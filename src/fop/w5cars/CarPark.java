@@ -28,7 +28,7 @@ public class CarPark {
 
     public int search(LicensePlate lp){
         for (int i = 0; i < spaces.length; i++){
-            if (spaces[i] != null && spaces[i].getLicensePlate() == lp){
+            if (spaces[i] != null && spaces[i].getLicensePlate().isEqual(lp)){
                 return i;
             }
         }
@@ -37,7 +37,7 @@ public class CarPark {
 
     public Car driveOff(LicensePlate lp){
         for (int i = 0; i < spaces.length; i++){
-            if (spaces[i] != null && spaces[i].getLicensePlate() == lp){
+            if (spaces[i] != null && spaces[i].getLicensePlate().isEqual(lp)){
                 Car car = spaces[i];
                 spaces[i] = null;
                 return car;
